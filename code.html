@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Profil Pribadi</title>
+</head>
+
+<body>
+    <h1>Profil Pribadi Chairunnisa_1303223068_IT4602</h1>
+    <div>
+        <!-- Menggunakan tag table untuk membuat tabel -->
+        <!-- a) Tag ini digunakan untuk menampilkan data dalam format tabel -->
+        <!-- b) Tabel digunakan untuk menampilkan informasi dalam format baris dan kolom -->
+        <table>
+            <tr>
+                <!-- Menggunakan tag th untuk header kolom -->
+                <!-- a) Tag th digunakan untuk mendefinisikan heading di setiap kolom -->
+                <!-- b) Saya menggunakan th untuk membuat heading 'Foto Profil' dan 'Video Perkenalan' -->
+                <th>Foto Profil </th>
+                <th>Video Perkenalan</th>
+            </tr>
+            <tr>
+                <!-- Menggunakan tag td untuk membuat kolom dalam baris tabel -->
+                <!-- a) Tag td adalah sel dalam tabel yang menampilkan data -->
+                <!-- b) Saya menggunakan td untuk menampilkan foto profil di sebelah kiri -->
+                <td>
+                    <!-- Menggunakan tag img untuk menyisipkan gambar -->
+                    <!-- a) Tag img digunakan untuk menampilkan gambar -->
+                    <!-- b) Saya menggunakan img untuk menampilkan foto profil -->
+                    <img src="/Users/macbook/Downloads/SMT 5/WEBPRO/cesa.JPG"Foto Profil" align="left" width="130" height="200"></td>
+                <td>
+                    <!-- Menggunakan tag video untuk menampilkan video -->
+                    <!-- a) Tag video digunakan untuk memutar video di browser -->
+                    <!-- b) Saya menggunakan video untuk memberikan perkenalan dalam format video -->
+                    <video controls width="350" height="200" align="center">
+                        <source src="/Users/macbook/Downloads/SMT 5/WEBPRO/cesa.MOV" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+        </table>
+    <!-- Menggunakan tag div sebagai container untuk konten lain -->
+    <!-- a) Tag div digunakan untuk mengelompokkan elemen HTML -->
+    <!-- b) Saya menggunakan div untuk mengelompokkan bagian 'Tentang Saya' -->    
+    </div>    
+
+        <h2>Tentang Saya</h2>
+        <!-- Menggunakan tag p untuk paragraf teks -->
+        <!-- a) Tag p digunakan untuk menampilkan teks dalam format paragraf -->
+        <!-- b) Saya menggunakan p untuk memberikan deskripsi singkat tentang diri saya -->
+        <p>Halo! Nama saya Chairunnisa dari kelas IT-46-02 dengan NIM 1303223068. 
+            Saya adalah seorang Mahasiswi S1 Teknologi Informasi yang sedang mempelajari Pemrograman Web.</p>
+
+        <!-- Menggunakan tag div untuk bagian keterampilan -->
+        <!-- a) Tag div digunakan untuk mengelompokkan konten terkait keterampilan -->
+        <!-- b) Saya menggunakan div untuk mengorganisir tabel keterampilan saya -->
+        <div class="keterampilan">
+            <h2>Keterampilan</h2>
+            <!-- Menggunakan tag table untuk menampilkan keterampilan dalam bentuk tabel -->
+            <!-- a) Table digunakan untuk menampilkan data secara terstruktur dalam baris dan kolom -->
+            <!-- b) Tabel digunakan untuk menyusun keterampilan dan tingkatannya -->
+            <table>
+                <tr>
+                    <!-- Menggunakan tag th untuk judul kolom keterampilan -->
+                    <!-- a) Th digunakan untuk menampilkan heading kolom -->
+                    <!-- b) Saya menggunakan th untuk memberikan judul 'Keterampilan' dan 'Tingkat' -->
+                    <th>Keterampilan</th>
+                    <th>Tingkat</th>
+                </tr>
+                <tr>
+                    <!-- Menggunakan tag td untuk data keterampilan -->
+                    <!-- a) Td digunakan untuk menampilkan isi dari sel dalam tabel -->
+                    <!-- b) Saya menggunakan td untuk menampilkan data HTML/CSS dan tingkat keahlian -->
+                    <td>HTML/CSS</td>
+                    <td>Pemula</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Pemula</td>
+                </tr>
+                <tr>
+                    <td>Golang</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Pemula</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-section">
+            <h2>Hubungi Saya</h2>
+            <!-- Menggunakan tag form untuk membuat form input data -->
+            <!-- a) Form digunakan untuk menerima dan mengirimkan data pengguna -->
+            <!-- b) Saya menggunakan form untuk membuat formulir kontak -->
+            <form action="/submit" method="post">
+                <!-- Menggunakan tag input untuk menerima input dari pengguna -->
+                <!-- a) Tag input digunakan untuk input text -->
+                <!-- b) Saya menggunakan input untuk menerima nama pengguna -->
+                <div>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Menggunakan textarea untuk input pesan -->
+                <!-- a) Textarea digunakan untuk input teks yang panjang -->
+                <!-- b) Saya menggunakan textarea untuk menerima pesan dari pengguna -->
+                <div>
+                    <label for="message">Pesan:</label>
+                    <div>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>    
+                    </div>
+                </div>
+                <div>
+
+                    <!-- Menggunakan tag button untuk tombol pengiriman -->
+                    <!-- a) Button digunakan untuk aksi interaktif -->
+                    <!-- b) Saya menggunakan button untuk mengirim form setelah diisi -->
+                    <button type="submit">Kirim Pesan</button>
+                </div>                
+            </form>
+        </div>
+
+        <div class="social-links">
+            <h2>Media Sosial:</h2>
+            <!-- Menggunakan tag a untuk hyperlink ke halaman web lain -->
+            <!-- a) Tag a digunakan untuk membuat link -->
+            <!-- b) Saya menggunakan a untuk tautan ke profil media sosial saya -->
+            <a href="https://www.linkedin.com/in/chairunnisa-291261217/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/cesaazh">GitHub</a> |
+            <a href="https://www.instagram.com/chairunnsza/" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
